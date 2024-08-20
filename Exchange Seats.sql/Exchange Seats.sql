@@ -26,9 +26,24 @@ FROM
 ORDER BY 
     id;
 
-NAME	  ID
+NAME	   ID
 Abbot	   1
 Doris	   2
-Emerson	 3
+Emerson	   3
 Green	   4
-Jeames	 5
+Jeames	   5
+
+
+SELECT 
+    name,
+    CASE 
+        WHEN MOD(id, 2) = 0 THEN id - 1 
+        when MOD(id, 2)!= 0 and id < count(*) over() then id + 1 else id end as id
+  from exchange_seats
+
+NAME	ID
+A	    2
+B	    1
+C	    4
+D	    3
+E	    5
