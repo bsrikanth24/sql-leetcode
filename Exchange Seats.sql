@@ -1,1 +1,0 @@
-# Exchange Seats.sql
