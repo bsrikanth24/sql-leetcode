@@ -52,7 +52,7 @@ select case when mod(id,2) = 0 then lag(name,1,name) over w else lead(name,1,nam
 over w end as name, id from test
 window w as (order by id) order by name;
 
-NAME	ID
+NAME	 ID
 A	    2
 B	    1
 C	    4
