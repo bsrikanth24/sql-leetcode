@@ -28,10 +28,10 @@ START WITH manager_id IS NULL
 ORDER BY hierarchy_level;
 
 SUBORDINATE_ID	SUBORDINATE_NAME	HIERARCHY_LEVEL		SALARY_DIFFERENCE
-2				Bob						1				-30000
-3				Charlie					1				-40000
-4				David					2				-45000
-5				Eve						2				-50000
-7				Grace					2				-52000
-6				Frank					2				-55000
-8				Helen					3				-60000
+2				          Bob						           1				-30000
+3			         	Charlie					         1				-40000
+4				         David					           2				-45000
+5				         Eve						            2				-50000
+7				         Grace					           2				-52000
+6				         Frank					           2				-55000
+8				         Helen				           	3				-60000
